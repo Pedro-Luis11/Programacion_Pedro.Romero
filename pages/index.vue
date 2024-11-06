@@ -10,7 +10,7 @@
 
     <div class="button-container d-flex justify-content-center align-items-center flex-column">
       <button type="button" class="btn btn-outline-danger mb-3" @click="Cambiar">PARE</button>
-      <button type="button" class="btn btn-outline-warning mb-3" @click="Cambiar2">PREPARADO</button>
+      <button type="button" class="btn btn-outline-warning mb-3" @click="Cambiar2">ATENTO</button>
       <button type="button" class="btn btn-outline-success mb-3" @click="Cambiar3">SIGA</button>
     </div>
   </div>
@@ -47,6 +47,7 @@ export default {
 
 <style scoped>
 .traffic-light-container {
+  background-image: url('/public/fondo.jpg');
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -55,17 +56,22 @@ export default {
 }
 
 .traffic-light {
-  width: 240px;
-  background-color: black;
-  border-radius: 20px;
-  padding: 40px;
+  width: 435px;
+  height: 557px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 20px;
+  position: relative;
+  background-image: url('/public/semaforo.png');
 }
 
 .button-container {
-  margin-top: 20px;
+  margin-top: -30px;
+  background-color: black;
+  padding: 15px;
+  height: 300px;
 }
 </style>

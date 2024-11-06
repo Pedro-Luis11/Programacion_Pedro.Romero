@@ -1,5 +1,5 @@
 <template>
-  <div class="amarillo" :class="{ 'on': isOn }"></div>
+  <div class="amarillo" :class="{ 'onamarillo': isOn }"></div>
 </template>
 
 <script>
@@ -13,11 +13,11 @@ export default {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-top: 10px;
   background-color: yellow;
 }
 
-.on {
-  opacity: 0;
+.onamarillo {
+  background-color: rgba(255, 255, 0, 0.1);
 }
 </style>

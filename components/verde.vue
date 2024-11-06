@@ -1,5 +1,5 @@
 <template>
-  <div class="verde" :class="{ 'on': isOn }"></div>
+  <div class="verde" :class="{ 'onverde': isOn }"></div>
 </template>
 
 <script>
@@ -13,11 +13,12 @@ export default {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  margin-bottom: 10px;
-  background-color: green;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  background-color: lime;
 }
 
-.on {
-  opacity: 0;
+.onverde {
+  background-color: rgba(0, 255, 0, 0.1);
 }
 </style>
